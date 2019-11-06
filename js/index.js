@@ -28,9 +28,8 @@ title2Color.forEach(element1 => {
   });
 });
 
-const thief = document.querySelector("body");
-
-thief.addEventListener("copy", () => {
+window.addEventListener("copy", function(event) {
+  event.preventDefault();
   alert(`Im watching you!! `);
 });
 
@@ -43,6 +42,7 @@ bigger.forEach(element2 => {
 });
 
 window.addEventListener("load", () => {
+  event.preventDefault();
   alert("Loading..");
 });
 
